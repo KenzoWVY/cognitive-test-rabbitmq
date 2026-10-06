@@ -2,12 +2,9 @@
 
 An AI-powered quiz application that generates multiple-choice questions in real-time. The system uses a microservices architecture, with Avalonia UI for the frontend, RabbitMQ for asynchronous message brokering, and Ollama for local LLM hosting.
 
-<<<<<<< HEAD
 ![Workflow Demo](./Assets/showcase.gif)
 *Left: Avalonia UI client | Right: .NET Background Worker processing RabbitMQ queues and communicating with local LLM.*
 
-=======
->>>>>>> 83343f31da9986c35f0b0321900e3ae50816655c
 ## Architecture
 
 The solution is divided into three main components that communicate asynchronously:
