@@ -1,0 +1,29 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="400"
+             xmlns:vm="using:UI.ViewModels"
+             x:DataType="vm:QuestionViewModel"
+             x:Class="UI.Views.QuestionView">
+
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="15" MaxWidth="500">
+        <TextBlock FontSize="18" FontWeight="Bold" 
+                   Text="{Binding QuestionNumber, StringFormat='Question {0}'}" />
+        
+        <TextBlock FontSize="16" Text="{Binding QuestionText}" TextWrapping="Wrap"/>
+
+        <ListBox ItemsSource="{Binding Options}" 
+                 SelectedIndex="{Binding SelectedIndex}"
+                 Background="Transparent" BorderThickness="0" Margin="0,10">
+            <ListBox.ItemTemplate>
+                <DataTemplate x:DataType="x:String">
+                    <TextBlock Text="{Binding}" VerticalAlignment="Center"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Button HorizontalAlignment="Right" Content="Submit" Command="{Binding SubmitCommand}" Width="100" HorizontalContentAlignment="Center"/>
+    </StackPanel>
+
+</UserControl>

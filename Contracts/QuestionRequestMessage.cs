@@ -7,5 +7,7 @@ public record QuestionRequestMessage
 
     public string Topic { get; init; } = string.Empty;
 
+    public string Difficulty { get; init; } = string.Empty;
+
     public int QuestionAmount { get; init; }
 }
