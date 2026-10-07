@@ -25,7 +25,7 @@ The following software is required to build and run this project:
 ## Getting Started
 
 ### 1. Start Ollama LLM
-By default, the phi4-mini is required. Open a terminal and run:
+By default, phi4-mini is required. Open a terminal and run:
 
 ```
 ollama pull phi4-mini:latest
@@ -52,8 +52,5 @@ Open a separate terminal at the root of the solution and launch the Avalonia app
 
 ```
 dotnet run --project UI
-<<<<<<< HEAD
-```
-=======
 ```
 >>>>>>> 83343f31da9986c35f0b0321900e3ae50816655c
