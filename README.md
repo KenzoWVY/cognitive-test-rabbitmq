@@ -53,4 +53,3 @@ Open a separate terminal at the root of the solution and launch the Avalonia app
 ```
 dotnet run --project UI
 ```
->>>>>>> 83343f31da9986c35f0b0321900e3ae50816655c
